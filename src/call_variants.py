@@ -127,6 +127,8 @@ def call_variants(var_freq):
         frequencies = var_freq[var_acc]
         true = frequencies['true']
         false = frequencies['false']
+        if (true+false) < 15:
+            continue
         try:
             percentage = true/(true+false)
             if percentage > 0.8: # For now, we use this simple heuristic.
