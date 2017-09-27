@@ -97,6 +97,7 @@ if [ -n "${OPTS_INCOMPLETE}" ]; then
 fi
 
 ## Retrieve the command line arguments and set up directories, paths
+DIR=$(readlink -f ${DIR})
 mkdir -p ${DIR} # If the working directory does not exist, create it
 SRC=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/src
 export BLASTDB=${DIR}
