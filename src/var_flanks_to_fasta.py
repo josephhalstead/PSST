@@ -6,7 +6,7 @@ import sys
 from get_alleles import get_nth_allele
 
 help_message = "Given a file containing lines of the form 'ACCESSION=W[X/Y]Z', this script creates a FASTA file\n" \
-             + "where the header identifiers are 'ACCESSION' and the sequence is the major allele, i.e. 'WXZ'" 
+			 + "where the header identifiers are 'ACCESSION' and the sequence is the major allele, i.e. 'WXZ'"
 usage_message = "[-h help and usage] [-i flanking sequence file] [-o output file]"
 
 options = "hi:o:"
