@@ -1,5 +1,5 @@
 def get_nth_allele(seq,n):
-		'''
+	'''
 	Given a variant sequence in the form 'X[Y_1/../Y_t]Z' where X,Y_1,..,Y_t,Z are nucleotide sequences, returns
 	the nth allele, i.e. X(Y_n)Z. If the nth allele does not exist, returns the last allele.
 	Input
